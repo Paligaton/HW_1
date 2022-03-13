@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+let sum= (a,b) =>  a+b;
+let minus= (a,b) =>  a-b;
+let umnoj= (a,b) =>  a*b;
+let del= (a,b) =>  a/b;
+symb = prompt('Введите знак арифметической операции(любой другой знак - выход): ');
+while (symb==="+" || symb==="-"|| symb==="*"|| symb==="/"){
+    a=prompt('Ввелите первое число');
+    b=prompt('Ввелите второе число');
+    res=NaN
+    if (symb === "+") res=sum(a,b);
+    else if (symb === "-") res=minus(a,b);
+    else if (symb === "*") res=umnoj(a,b);
+    else if (symb === "/") res=del(a,b);
+    alert("Результат: " + res)
+    symb = prompt('Введите знак арифметической операции(любой другой знак - выход): ');
+}
+
+</script>
+</body>
+</html>
