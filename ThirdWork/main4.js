@@ -1,0 +1,1 @@
+for(let i = 0,d='*';i<20;console.log(d+='*'),i++){}
